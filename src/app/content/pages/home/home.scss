@@ -1,0 +1,54 @@
+#homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 60px;
+}
+
+#firstLine {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  margin-top: 60px;
+
+  align-items: center;
+}
+
+#firstLine img {
+  width: min(250px, 80%);
+  border-radius: 5000px;
+}
+
+
+#textContainer {
+  width: min(600px, 80%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px;
+
+  background-color: rgba(253, 147, 0, 0.25);
+
+  border-radius: 15px 50px;
+}
+
+#textContainer p {
+  text-align: center;
+
+  font-size: 20px;
+}
+
+#textContainer .button {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a {
+  text-decoration: underline;
+  font-size: 18px;
+}
