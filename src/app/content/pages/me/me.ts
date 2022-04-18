@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-me',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Me implements OnInit {
 
-  constructor() { }
+  member_count: number = -1;
+
+  constructor(private _httpClient: HttpClient) {
+  }
 
   ngOnInit(): void {
+    this.fetchMember();
+  }
+
+  public fetchMember() {
+    this._httpClient.get<number>("https://devarea.fr/data/stats/member_count")
+      .subscribe(data => this.member_count = data);
   }
 
 }

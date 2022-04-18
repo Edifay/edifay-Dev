@@ -2,13 +2,15 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from "@angular/router";
 
+import {HttpClientModule} from "@angular/common/http";
+
 import {AppComponent} from './app.component';
 import {Home} from './content/pages/home/home';
 import {Header} from './content/global/header/header';
 import {Me} from './content/pages/me/me';
 import {MyProjects} from "./content/pages/my-projects/my-projects";
 import {Contact} from './content/pages/contact/contact';
-import { Footer } from './content/global/footer/footer';
+import {Footer} from './content/global/footer/footer';
 
 const routes: Routes = [
   {path: 'home', component: Home},
@@ -31,7 +33,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

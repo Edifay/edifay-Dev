@@ -9,8 +9,11 @@
   --main-color-hover: rgb(255, 157, 16);
   --main-color-hover-border: #c55b08;
 
-  --text-color: dark-grey;
+  --text-color: #2e3537;
 
+}
+
+p {
   color: var(--text-color);
 }
 
@@ -28,6 +31,8 @@
 .title {
   text-align: center;
   font-size: 45px;
+
+  color: var(--text-color);
 }
 
 a {

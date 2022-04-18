@@ -1,0 +1,94 @@
+#container {
+  display: flex;
+
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+  width: min(900px, 80%);
+
+  flex-direction: column;
+}
+
+#nameContainer {
+  display: flex;
+}
+
+#profilIcon {
+  width: 70px;
+  height: 70px;
+  border-radius: 1000px;
+
+  margin-right: 10px;
+
+  margin-bottom: 40px;
+}
+
+#container .title {
+  font-size: 25px;
+
+  text-align: left;
+}
+
+#container p {
+  text-align: left;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+}
+
+a {
+  color: var(--main-color-hover);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#comp {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+
+  width: min(500px, 95%);
+
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+#comp div {
+  width: 80px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 8px;
+
+  border-radius: 10px;
+
+  user-select: none;
+
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+#comp div:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.19);
+
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#comp img {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+}
+
+.rounded {
+  border-radius: 20px;
+}
