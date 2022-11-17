@@ -59,7 +59,12 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 
+}
+
+#comp p {
   text-align: center;
+  font-size: 16px;
+  margin: 0;
 }
 
 #comp div {
@@ -91,4 +96,9 @@ a:hover {
 
 .rounded {
   border-radius: 20px;
+}
+
+.date {
+  width: 50px;
+  display: inline-block;
 }

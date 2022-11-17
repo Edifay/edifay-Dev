@@ -11,6 +11,7 @@ import {Me} from './content/pages/me/me';
 import {MyProjects} from "./content/pages/my-projects/my-projects";
 import {Contact} from './content/pages/contact/contact';
 import {Footer} from './content/global/footer/footer';
+import { Arrow } from './content/global/arrow/arrow';
 
 const routes: Routes = [
   {path: 'home', component: Home},
@@ -29,7 +30,8 @@ const routes: Routes = [
     Me,
     MyProjects,
     Contact,
-    Footer
+    Footer,
+    Arrow
   ],
   imports: [
     BrowserModule,
