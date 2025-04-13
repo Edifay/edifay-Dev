@@ -108,30 +108,70 @@ a:hover {
   flex-direction: column;
   gap: 5px;
 
-  align-items: center;
 
-  margin-top: 20px;
+
+  // align-items: center;
+
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
-
 #formations p {
-  text-align: center;
+  //text-align: center;
   margin: 0;
 
+  line-height: 30px;
+
   font-size: 18px;
+}
+
+#formations .title {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 #formations arrow {
   transform: rotate(90deg) scale(1.5);
 }
 
-hr{
+.xpHeader {
+  color: #7b7b7b;
+  font-style: italic;
+}
+
+.greenDot {
+  border-radius: 100px;
+  width: 12px;
+  height: 12px;
+  background-color: #2cc82c;
+  display: inline-block;
+
+  margin-right: 10px;
+  margin-bottom: 1px;
+}
+
+
+.grayDot {
+  border-radius: 100px;
+  width: 7px;
+  height: 7px;
+  background-color: gray;
+  display: inline-block;
+
+  margin-right: 7px;
+  margin-bottom: 4px;
+}
+
+hr {
   width: 100%;
   height: 2px;
 
   border: none;
   border-radius: 20px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   background-color: rgba(227, 227, 227, 0.81);
 }
